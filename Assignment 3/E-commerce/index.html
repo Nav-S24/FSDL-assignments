@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fashion Hub</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">FASHION HUB</a>
+            <div>
+                <a href="cart.html" class="nav-btn">CART</a>
+                <a href="login.html" class="nav-btn">LOGIN</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Section -->
+    <div class="container mt-5">
+        <div class="row g-5">
+
+            <!-- Men T-Shirt -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="img/mens.avif" class="card-img-top" alt="Men T-Shirt">
+                    <div class="card-body">
+                        <a href="Mens-Shirt.html">
+                            <h5 class="card-title">Men T-Shirt</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Women Dress -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="img/womens.webp" class="card-img-top" alt="Women Dress">
+                    <div class="card-body">
+                        <a href="womendress.html">
+                            <h5 class="card-title">Women Dress</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jackets -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="img/jackets.avif" class="card-img-top" alt="Jackets">
+                    <div class="card-body">
+                        <a href="jackets.html">
+                            <h5 class="card-title">Jackets</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shoes -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="img/shoes.webp" class="card-img-top" alt="Shoes">
+                    <div class="card-body">
+                        <h5 class="card-title">Shoes</h5>
+                        <p class="price">Rs. 3500</p>
+                        <button class="lux-btn" onclick="addToCart('Shoes',3500)">
+                            ADD TO CART
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Women Heels -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="img/heels.jpg" class="card-img-top" alt="Women Heels">
+                    <div class="card-body">
+                        <h5 class="card-title">Women Heels</h5>
+                        <p class="price">Rs. 4000</p>
+                        <button class="lux-btn" onclick="addToCart('Women Heels',4000)">
+                            ADD TO CART
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Cart Script -->
+    <script>
+        function addToCart(productName, productPrice) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ name: productName, price: productPrice, quantity: 1 });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(productName + " has been added to your cart.");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+body {
+    background-color: #f4f1ea;
+    font-family: 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white !important;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: black !important;
+}
+
+/* Page Title */
+.page-title {
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+/* Cart Container */
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Each Item */
+.cart-item {
+    background: white;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-info h5 {
+    font-weight: 500;
+}
+
+.cart-info p {
+    margin: 3px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Buttons */
+.cart-actions button {
+    border: 1px solid black;
+    background: transparent;
+    padding: 4px 10px;
+    margin-left: 8px;
+    transition: 0.3s;
+}
+
+.cart-actions button:hover {
+    background: black;
+    color: white;
+}
+
+.remove-btn {
+    border: 1px solid #b30000;
+    color: #b30000;
+}
+
+.remove-btn:hover {
+    background: #b30000;
+    color: white;
+}
+
+/* Summary */
+.cart-summary {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.clear-btn {
+    border: 1px solid black;
+    background: transparent;
+    padding: 6px 20px;
+    transition: 0.3s;
+}
+
+.clear-btn:hover {
+    background: black;
+    color: white;
+}
+
+/* Empty Cart */
+.empty-text {
+    color: #777;
+    font-size: 16px;
+}

@@ -1,0 +1,92 @@
+body {
+        background-color: #f4f1ea;
+        font-family: 'Helvetica Neue', sans-serif;
+        letter-spacing: 0.5px;
+    }
+
+    /* Navbar */
+    .navbar {
+        background-color: white !important;
+        border-bottom: 1px solid #ddd;
+        padding: 20px 0;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        color: black !important;
+    }
+
+    .nav-btn {
+        border: 1px solid black;
+        background: transparent;
+        color: black;
+        padding: 6px 18px;
+        border-radius: 0;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    .nav-btn:hover {
+        background-color: black;
+        color: white;
+    }
+
+    /* Card Styling */
+    .card {
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.02);
+    }
+
+    .card-img-top {
+        height: 320px;
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 20px 10px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+
+    .price {
+        font-size: 14px;
+        color: #555;
+    }
+
+    /* Luxury Button */
+    .lux-btn {
+        border: 1px solid black;
+        background: transparent;
+        color: black;
+        padding: 6px 20px;
+        border-radius: 0;
+        font-size: 13px;
+        margin-top: 10px;
+        transition: 0.3s;
+    }
+
+    .lux-btn:hover {
+        background: black;
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        opacity: 0.7;
+    }

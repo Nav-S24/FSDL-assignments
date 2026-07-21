@@ -1,0 +1,67 @@
+body {
+    background-color: #f4f1ea;
+    font-family: 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white !important;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: black !important;
+}
+
+/* Centering */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+/* Login Card */
+.login-card {
+    background: white;
+    padding: 40px;
+    width: 350px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Title */
+.login-title {
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* Input Fields */
+.custom-input {
+    border-radius: 0;
+    border: 1px solid black;
+}
+
+.custom-input:focus {
+    box-shadow: none;
+    border-color: black;
+}
+
+/* Button */
+.login-btn {
+    border: 1px solid black;
+    background: transparent;
+    padding: 8px;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    background: black;
+    color: white;
+}
